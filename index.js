@@ -4,8 +4,8 @@ const routes = require('./src/routes');
 require('dotenv').config();
 const cors = require('cors');
 
-const uri = process.env.DATABASE_URL;
-// const uri = "mongodb+srv://mateussarmento:123qwe@cluster0.io8uqxl.mongodb.net/?retryWrites=true&w=majority";
+// const uri = process.env.DATABASE_URL;
+const uri = "mongodb+srv://mateussarmento:123qwe@cluster0.io8uqxl.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(uri);
 const database = mongoose.connection;
 
